@@ -18,18 +18,17 @@ app = Flask(__name__)
 # Lightweight emotion model
 product_recommendations = {
     'happy': ['Bold Red Lipstick - Maybelline SuperStay Matte Ink', 
-'Golden Glow Blush - Fenty Beauty'],
-Eyeshadow - NYX Professional'],
- 'sad': ['Subtle Nude Lipstick - Revlon', 'Matte Beige Eyeshadow - NYX 
-Professional'],
-    'angry': ['Fiery Orange Lipstick - MAC Cosmetics', 'Smoky Black 
-Eyeliner - Urban Decay'],
-    'surprise': ['Shimmery Pink Lip Gloss - Glossier', 'Peach Highlighter 
-- Tarte'],
-    'neutral': ['Natural Brown Lipstick - Bobbi Brown', 'Soft Pink Blush - 
-Rare Beauty'],
-    'fear': ['Deep Purple Lipstick - NARS', 'Violet Eyeshadow - Anastasia 
-Beverly Hills']
+              'Golden Glow Blush - Fenty Beauty'],
+    'sad': ['Subtle Nude Lipstick - Revlon', 
+            'Matte Beige Eyeshadow - NYX Professional'],
+    'angry': ['Fiery Orange Lipstick - MAC Cosmetics', 
+              'Smoky Black Eyeliner - Urban Decay'],
+    'surprise': ['Shimmery Pink Lip Gloss - Glossier', 
+                 'Peach Highlighter - Tarte'],
+    'neutral': ['Natural Brown Lipstick - Bobbi Brown', 
+                'Soft Pink Blush - Rare Beauty'],
+    'fear': ['Deep Purple Lipstick - NARS', 
+             'Violet Eyeshadow - Anastasia Beverly Hills']
 }
 
 @app.route('/analyze', methods=['POST'])

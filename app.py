@@ -19,8 +19,9 @@ app = Flask(__name__)
 product_recommendations = {
     'happy': ['Bold Red Lipstick - Maybelline SuperStay Matte Ink', 
 'Golden Glow Blush - Fenty Beauty'],
-    'sad': ['Subtle Nude Lipstick - L\'Oréal Paris', 'Matte Beige 
 Eyeshadow - NYX Professional'],
+ 'sad': ['Subtle Nude Lipstick - Revlon', 'Matte Beige Eyeshadow - NYX 
+Professional'],
     'angry': ['Fiery Orange Lipstick - MAC Cosmetics', 'Smoky Black 
 Eyeliner - Urban Decay'],
     'surprise': ['Shimmery Pink Lip Gloss - Glossier', 'Peach Highlighter 

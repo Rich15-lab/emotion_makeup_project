@@ -1,6 +1,8 @@
+
+tensorflow==2.10.0
+tf-keras
 flask
 mediapipe
 numpy
 opencv-python
 deepface
-

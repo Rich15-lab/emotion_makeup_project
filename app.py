@@ -4,15 +4,6 @@ import numpy as np
 from deepface import DeepFace
 import tensorflow as tf
 
-# Optimize TensorFlow memory usage
-physical_devices = tf.config.list_physical_devices('CPU')
-if physical_devices:
-    tf.config.experimental.set_virtual_device_configuration(
-        physical_devices[0],
-        
-[tf.config.experimental.VirtualDeviceConfiguration(memory_limit=256)]
-    )
-
 app = Flask(__name__)
 
 # Lightweight emotion model
@@ -54,4 +45,5 @@ list) else analysis['dominant_emotion']
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
